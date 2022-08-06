@@ -4,6 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["DOM", "ESNext"],
     "allowJs": false,
+    "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -13,11 +14,8 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }

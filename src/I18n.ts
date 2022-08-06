@@ -8,7 +8,7 @@ import {
 } from "react";
 import { useLocalStorageState } from "ahooks";
 import { IntlProvider } from "react-intl";
-import { I18nConfig, Locale, I18nDict, I18nProviderProps } from "@/types";
+import { I18nConfig, Locale, I18nDict, I18nProviderProps } from "./types";
 
 export const I18nContext = createContext<I18nConfig>({
   locale: "",

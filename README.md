@@ -2,15 +2,14 @@
 
 > **Notice:** This is an experimental package with no reliable testing so it may has unknown bugs. You are warmly welcomed to use it to test and report bugs~ Thank you!
 
-A tool that helps you to manage i18n translations above `react-intl`.
+A tool that helps you to auto config manage `react-intl`. By several simple configuration like "your locale file url", you will be able to use `react-intl`, no more frustrating contexts settings needed.
 
-By introducing `yuansa-i18n`, you will be able to:
+`yuansa-i18n` will enable you to:
 
 - Manage locales with hooks
 - Have fallbacks when Text's key is missing
 - Fetch texts conditionally and remotely
-- Cache user's locale preference in `window.localStorage`
-- **Will use `window.navigator.language` as fallback locale if no `defaultLocale` found**
+- Cache user's locale preference in `window.localStorage` **(Will use `window.navigator.language` as fallback locale if no `defaultLocale` found)**
 
 ## Get Started
 
@@ -34,7 +33,7 @@ By introducing `yuansa-i18n`, you will be able to:
    ```tsx
    import { FC } from "react";
    import { I18nProvider } from "yuansa-i18n";
-   import { enUS, zhCN, esMX } from "@/src/locale";
+   import { enUS, zhCN, esMX } from "@/locale";
 
    const i18nConfig = {
      remoteI18nDictURLMap: {
